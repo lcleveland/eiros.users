@@ -56,6 +56,42 @@ in
           mangowc_command = "focusdir";
           command_arguments = "down";
         };
+        swap_window_left = {
+          modifier_keys = [
+            "SUPER"
+            "SHIFT"
+          ];
+          key_symbol = "h";
+          mangowc_command = "exchange_client";
+          command_arguments = "left";
+        };
+        swap_window_right = {
+          modifier_keys = [
+            "SUPER"
+            "SHIFT"
+          ];
+          key_symbol = "l";
+          mangowc_command = "exchange_client";
+          command_arguments = "right";
+        };
+        swap_window_up = {
+          modifier_keys = [
+            "SUPER"
+            "SHIFT"
+          ];
+          key_symbol = "k";
+          mangowc_command = "exchange_client";
+          command_arguments = "up";
+        };
+        swap_window_down = {
+          modifier_keys = [
+            "SUPER"
+            "SHIFT"
+          ];
+          key_symbol = "j";
+          mangowc_command = "exchange_client";
+          command_arguments = "down";
+        };
       };
     };
   };
