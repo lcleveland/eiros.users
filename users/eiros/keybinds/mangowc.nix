@@ -107,6 +107,14 @@ in
           key_symbol = "Tab";
           mangowc_command = "toggleoverview";
         };
+        reload_configuration = {
+          modifier_keys = [
+            "SUPER"
+            "SHIFT"
+          ];
+          key_symbol = "r";
+          mangowc_command = "reload_config";
+        };
       };
     };
   };
