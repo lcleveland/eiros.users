@@ -115,6 +115,12 @@ in
           key_symbol = "r";
           mangowc_command = "reload_config";
         };
+        lock_screen = {
+          modifier_keys = [ "SUPER" ];
+          key_symbol = "Escape";
+          mangowc_command = "spawn_shell";
+          command_arguments = "dms ipc call lock lock";
+        };
       };
     };
   };
