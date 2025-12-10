@@ -92,6 +92,21 @@ in
           mangowc_command = "exchange_client";
           command_arguments = "down";
         };
+        window_toggle_float = {
+          modifier_keys = [ "SUPER" ];
+          key_symbol = "g";
+          mangowc_command = "togglefloating";
+        };
+        window_toggle_maximize = {
+          modifier_keys = [ "SUPER" ];
+          key_symbol = "m";
+          mangowc_command = "togglemaximizescreen";
+        };
+        overview_toggle = {
+          modifier_keys = [ "SUPER" ];
+          key_symbol = "Tab";
+          mangowc_command = "toggleoverview";
+        };
       };
     };
   };
