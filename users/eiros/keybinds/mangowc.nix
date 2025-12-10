@@ -9,7 +9,6 @@ in
         launch_spotlight = lib.mkIf config.eiros.system.desktop_environment.dank_material_shell.enable {
           modifier_keys = [ "SUPER" ];
           key_symbol = "d";
-          flag_modifiers = [ "r" ];
           mangowc_command = "spawn_shell";
           command_arguments = "dms ipc call spotlight toggle";
         };
