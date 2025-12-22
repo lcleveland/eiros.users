@@ -25,6 +25,15 @@ in
           key_symbol = "q";
           mangowc_command = "quit";
         };
+        launch_file_browser =
+          lib.mkIf config.eiros.system.default_applications.yazi.default_file_browser.enable
+            {
+              modifier_keys = [ "SUPER" ];
+              key_symbol = "f";
+              mangowc_command = "spawn";
+              command_arguments = "ghostty -e yazi";
+
+            };
         launch_terminal = {
           modifier_keys = [ "SUPER" ];
           key_symbol = "t";
